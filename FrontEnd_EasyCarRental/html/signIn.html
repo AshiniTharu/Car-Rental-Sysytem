@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In | Easy Car Rental</title>
+    <link rel="stylesheet" href="../css/SIgnInStyles.css">
+</head>
+<body id="signIn">
+<div class="card">
+    <div class="bg-danger" id="wrongPass" style="display: none">
+        Invalid username or password.
+    </div>
+    <form>
+    <h2 class="title"> Log in</h2>
+    <p class="subtitle">Don't have an account? <a href="http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/registration_2.html?_ijt=1gvgeokpdc2vb1c9rvt7rv0i9j"> sign Up</a></p>
+
+    <p class="or"><span>or</span></p>
+
+    <div class="email-login">
+        <label for="userName"> <b>User Name</b></label>
+        <input  id="userName" type="text" placeholder="Enter UserName" name="uname"  required>
+        <label for="psw"><b>Password</b></label>
+        <input id="psw" type="password" placeholder="Enter Password" name="psw"  required>
+    </div>
+        <button id="btnSave" class="cta-btn" onclick="location.href='http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/carList.html?_ijt=93577bvj056vblfsuss4g54j9f'">Log In</button>
+    <a class="forget-pass" href="#">Forgot password?</a>
+    <a class="previous-pass" href="http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/DashboardSignIn.html?_ijt=ivvhe1flej603ev0e3e2tiov2v">Previous</a>
+    </form>
+</div>
+<script src="../asserts/css/bootstrap.min.css"></script>
+<script src="../asserts/js/jquery-3.6.0.min.js"></script>
+<script>
+
+    $("#btnSave").click(function () {
+
+        let userName = $("#userName").val();
+        let password = $("#psw").val();
+        $.ajax({
+
+            method: "POST",
+            url: "http://localhost:8080/Easy_Car_Rental/customer/login/${username}/${password}",
+            contentType: 'application/json',
+            data: ({
+                    username: userName,
+                    password: password
+
+                }),
+                success: function (data) {
+                  alert("you are login")
+            }
+           /* method: 'GET',
+            url: `http://localhost:8080/Easy_Car_Rental/customer/login/${userName}/${password}`,
+            async: true,
+
+            success: function () {
+
+                    $('#signIn').modal('hide');
+                    window.location = 'carList.html';
+            },*/
+
+        });
+    });
+
+</script>
+<script>
+    const xhr=new XMLHttpRequest();
+    const body=document.getElementById('signIn');
+
+    $("#btnSave").onclick=function () {
+        if(this.status=== 200){
+            body.innerHTML=xhr.responseText;
+        }else{
+            console.warn('wrong details');
+        }
+    }
+        xhr.open('get','carList.html');
+        xhr.send();
+</script>
+</body>
+</html>

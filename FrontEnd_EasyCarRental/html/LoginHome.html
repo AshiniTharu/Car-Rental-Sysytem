@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy car rental PVT</title>
+    <link rel="stylesheet" href="../css/LoginHome.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../asserts/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../asserts/fontawesome/js/fontawesome.min.js">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section id="home">
+
+    <section id="nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <a id="head">EasyCar...</a>
+                </a>
+                <img src="../asserts/img/free-car-icon.png">
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../asserts/img/account_circle_black_24dp.svg" alt="">My Account
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#" id="userName">Log In as name</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Change Username</a></li>
+                                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#"><img src="../asserts/img/power_settings_new_black_24dp.svg" alt="">Sign out</a></li>
+                            </ul>
+                        </li>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="pic">
+        <div class="carousel-item active">
+            <img src="../asserts/img/ks-rental.jpg" class="d-block img-fluid" >
+
+            <div class="carousel-caption" >
+                <h1>Car Hire – Search, Compare & Save</h1>
+                <h5><img src="../asserts/img/done_white_36dp2.svg" alt="">Free cancellations on most bookings |
+                    <img src="../asserts/img/done_white_36dp2.svg" alt="">60,000+ locations |
+                    <img src="../asserts/img/done_white_36dp2.svg" alt="">Customer support in 40+ languages</h5>
+                <div id="checkbox" class="container-fluid p-3 ">
+                    <h4>Let’s find your ideal car</h4>
+                    <input type="checkbox" name="locationNeeded" class="locationNeeded" >Drop car off at different location
+                    <input type="checkbox" name="driverNeeded" class="driverNeeded">Driver aged 30 – 65
+                    <div class="details">
+                        <input type="text" name="location" id="location" placeholder="Pick-Up Location">
+                        <input type="datetime-local" name="startDate" id="startDate">
+                        <input type="datetime-local" name="endDate" id="endDate">
+                        <button type="button" class="btn btn-success">Search</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section></section>
+
+</section>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    
+    $("#btnLogIn").click(function () {
+        var x = signIn.html(document.getElementsByName("uname").textContent) ;
+        document.getElementById("userName").innerHTML = x;
+    })
+    
+</script>
+
+
+</body>
+</html>

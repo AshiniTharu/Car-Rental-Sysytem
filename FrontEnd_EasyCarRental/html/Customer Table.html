@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Table</title>
+    <link rel="stylesheet" href="../asserts/css/bootstrap.min.css">
+</head>
+<body onload="myFunction();">
+<br>
+<section id="custbl">
+    <div class="row mt-1" id="ad">
+    <div class="col-md-6" id="titl">
+        <h2 style="margin-left: 50px">Customer Datails</h2>
+
+    </div>
+    <div class="col-md-6">
+        <div id="checkbox2" class="container-fluid p-3 ">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search in Customer NIC" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" id="srchcus">Search</button>
+            </form>
+
+        </div>
+
+    </div>
+    </div>
+</section>
+<br>
+<hr>
+<section>
+    <table class="table table-dark table-hover">
+
+        <thead>
+        <tr>
+            <th> NIC</th>
+            <th> Username</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Contact</th>
+            <th>Contact</th>
+
+        </tr>
+        </thead>
+        <tbody id="tblCustomers">
+
+        </tbody>
+    </table>
+</section>
+
+<script src="../asserts/js/bootstrap.min.js"></script>
+<script src="../asserts/js/jquery-3.6.0.min.js"></script>
+<script>
+
+    function myFunction() {
+       $("#tblCustomers").empty();
+       $.ajax({
+           url: "http://localhost:8080/Easy_Car_Rental/customer",
+           method: 'GET',
+           async: true,
+           dataType: "json", // convert response into JSON if valid
+           success: function (data, textState, xhr) {
+               // let ob = JSON.parse(data); // do the same thing
+
+               for (let cus of data) {
+                   var row = `<tr><td>${cus.nic}</td><td>${cus.username}</td><td>${cus.email}</td><td>${cus.address}</td><td>${cus.contact}</td><td>${cus.password}</td></tr>`;
+                   $("#tblCustomers").append(row);
+               }
+           }
+       });
+   }
+   
+   function f() {
+       document.write("hello")
+   }
+</script>
+
+</body>
+</html>

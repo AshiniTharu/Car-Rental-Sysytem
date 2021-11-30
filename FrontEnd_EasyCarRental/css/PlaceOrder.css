@@ -1,0 +1,317 @@
+
+h1{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+table{
+    width:100%;
+    table-layout: fixed;
+}
+.tbl-header{
+    background-color: rgba(255,255,255,0.3);
+}
+.tbl-content{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+    font-family: 'Roboto', sans-serif;
+}
+section{
+    margin: 50px;
+}
+
+
+/* follow me template */
+.made-with-love {
+    margin-top: 40px;
+    padding: 10px;
+    clear: left;
+    text-align: center;
+    font-size: 10px;
+    font-family: arial;
+    color: #fff;
+}
+.made-with-love i {
+    font-style: normal;
+    color: #F50057;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+}
+.made-with-love a {
+    color: #fff;
+    text-decoration: none;
+}
+.made-with-love a:hover {
+    text-decoration: underline;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+/*-----------------------Sign In---------------------------*/
+body {
+    background-color: rgb(228, 229, 247);
+}
+.social-login img {
+    width: 24px;
+}
+a {
+    text-decoration: none;
+}
+
+.card {
+    font-family: sans-serif;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom:3em;
+    border-radius: 10px;
+    background-color: #ffff;
+    padding: 1.8rem;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+.subtitle {
+    text-align: center;
+    font-weight: bold;
+}
+.btn-text {
+    margin: 0;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.google-btn {
+    background: #fff;
+    border: solid 2px rgb(245 239 239);
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    padding: 10px 10px;
+    flex: auto;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.fb-btn {
+    background: #fff;
+    border: solid 2px rgb(69, 69, 185);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.or {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(245 239 239);
+    line-height: 0.1em;
+    margin: 25px 0;
+}
+.or span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.email-login {
+    display: flex;
+    flex-direction: column;
+}
+.email-login label {
+    color: rgb(170 166 166);
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 15px 20px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#btnSave {
+    background-color: rgb(69, 69, 185);
+    color: white;
+    padding: 18px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.forget-pass {
+    text-align: center;
+    display: block;
+}
+.previous-pass{
+    color: black;
+}
+.previous-pass:hover{
+    color:red;
+}
+h2{
+    padding-bottom: 10px;
+}
+form h2{
+    color: rgb(69, 69, 185);
+}
+#btnsendReq{
+    background-color: rgb(69, 69, 185);
+    height: 37px;
+    width: 200px;
+    margin-left: 50px;
+}
+#files{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid red;
+    margin: 10px;
+}
+#file{
+    padding-bottom: 5px;
+}
+form h2{
+    color: rgb(69, 69, 185);
+}
+form h3{
+    color: rgb(69, 69, 185);
+}
+#btnNext{
+    margin-top: 10px;
+    background-color: rgb(69, 69, 185);
+    height: 47px;
+    width: 200px;
+    margin-left: 50px;
+}
+#btnSave{
+    background-color: rgb(69, 69, 185);
+    height: 47px;
+    width: 200px;
+    margin-left: 50px;
+}
+h6{
+    color: red;
+}
+#btnSendFile2{
+    margin-top: 10px;
+}
+#line2{
+font-size: 15px;
+}
+#line1{
+    font-size: 17px;
+}
+.box{
+    border: 2px solid #adb5bd;
+    border-radius: 10px;
+    width: 540px;
+    height: 525px;
+}
+#span{
+    padding-top: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+h4{
+    color: rgb(69, 69, 185);
+    text-align: center;
+    align-items: center;
+}
+#bdetail input{
+    margin-left: 65px ;
+    width: 160px;
+    height: 5px;
+}
+#bdetaildate input{
+    margin-left: 107px;
+    width: 160px;
+    height: 35px;
+}
+#bdetailnic input{
+    margin-left: 82px;
+    width: 160px;
+    height: 35px;
+}
+#bdetailreg input{
+    margin-left: 25px;
+    width: 160px;
+    height: 35px;
+}
+#bdetails input{
+    margin-left: 8px;
+    width: 260px;
+    height: 35px;
+}
+#bdetaile input{
+    margin-left: 13px;
+    width: 260px;
+    height: 35px;
+}
+#req{
+    margin-top: 30px;
+    margin-left: 340px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(69, 69, 185);
+}
+#line3{
+    margin-left: 45px;
+    color: rgb(69, 69, 185);
+}
+#radio{
+    padding-left: 180px;
+    padding-top: 10px;
+}

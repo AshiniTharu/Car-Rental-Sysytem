@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Place Booking</title>
+    <link rel="stylesheet" href="../css/PlaceOrder.css">
+    <link rel="stylesheet" href="../css/SIgnInStyles.css">
+    <link rel="stylesheet" href="../asserts/css/bootstrap.min.css">
+</head>
+<body>
+
+        <div class="card" style="width: 1000px;">
+            <form>
+                <h2 class="title">Place your Booking..</h2>
+                <hr>
+
+                <div class="row mt-3">
+
+                    <div class="col-md-5">
+                        <label id="line1" style="margin-top: 10px">Pleace deposit the Loss Damage Weiver fee of your choosen vehicle to the bellow bank account and upload a clear photo of the bank slip with booking details</label>
+                        <label id="line3" style="margin-top: 10px"><b>Commercial Bank - Panadura Branch</b></label>
+                        <h6 id="line3" style="margin-top: 10px">013 0123 0123 0123</h6>
+                        <h6 id="line3" style="margin-top: 10px">E.C.RentalPVT</h6>
+                        <label id="line2" style="margin-top: 10px"><b>Then we will check your booking details and confirm your order within 30 minuites via both confirmation phone call and confirmation email</b></label>
+                        <label id="line2" style="margin-top: 10px">If the request will cancel becauce any reasons,We are refund the Loss Damage Weiver fee again to your bank accont</label>
+                        <div id="files" style="margin-top: 10px">
+                            <h6>Pleace Note: This is one time upload ! </h6>
+                            <input class="form-control" id="file" name="file" type="file" required>
+                            <button class="btn btn-danger" id="btnSendFile2" type="button"  >Upload</button>
+
+                        </div >
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row mt-3">
+                            <div class="col-md-5">
+                        <div class="box">
+                            <h4 style="padding-top: 5px">Booking Details</h4>
+                            <hr >
+
+                                <div class="row g-3 align-items-center">
+                                    <div class="col-auto">
+                                        <label  class="col-form-label" style="padding: 10px">Loss Damage Wiever : <span id="span">Rs.10000.00</span></label>
+                                    </div>
+                                </div>
+                            <div class="row g-3 align-items-center" id="bdetail">
+                                    <div class="col-auto">
+                                        <label  class="col-form-label" style="padding: 10px">Booking Id :</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input type="text" id="bookingId" class="form-control">
+                                    </div>
+                                </div>
+                            <div class="row g-3 align-items-center" id="bdetaildate">
+                                    <div class="col-auto">
+                                        <label  class="col-form-label" style="padding: 10px">Date :</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input type="date" id="date" class="form-control">
+                                    </div>
+                                </div>
+                            <div class="row g-3 align-items-center" id="bdetailnic">
+                                    <div class="col-auto">
+                                        <label for="inputPassword6" class="col-form-label" style="padding: 10px">Your Nic :</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input type="text" id="nic" class="form-control">
+                                    </div>
+                                </div>
+                            <div class="row g-3 align-items-center" id="bdetailreg">
+                                    <div class="col-auto">
+                                        <label for="inputPassword6" class="col-form-label" style="padding: 10px">Vehical reg Num :</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input type="text" id="regnum" class="form-control">
+                                    </div>
+                                </div>
+                            <div class="row g-3 align-items-center" id="bdetails">
+                                    <div class="col-auto">
+                                        <label for="inputPassword6" class="col-form-label" style="padding: 10px">Start date and time :</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input type="datetime-local" id="sdate" class="form-control">
+                                    </div>
+                                </div>
+                            <div class="row g-3 align-items-center" id="bdetaile">
+                                    <div class="col-auto">
+                                        <label for="inputPassword6" class="col-form-label" style="padding: 10px">End date and time :</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input type="datetime-local" id="edate" class="form-control">
+
+                                    </div>
+                                </div>
+                            <div  id="radio">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="need a driver">
+                                    <label id="withdriver" class="form-check-label" for="inlineRadio1">With Driver</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="no need a driver">
+                                    <label id="withoutdriver" class="form-check-label" for="inlineRadio2">Without Driver</label>
+                                </div>
+                            </div>
+
+
+                            <button type="button" class="btn btn-success" id="req" style="display: none" >Send Request</button>
+                        </div>
+                            </div>
+                    </div>
+                </div>
+                <a class="previous-pass" href="http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/carList.html?_ijt=h0j0i2kgdorf0f57abkldpdtsv">Previous</a>
+                <a class="previous-pass" href="http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/carList.html?_ijt=h0j0i2kgdorf0f57abkldpdtsv" style="margin-left: 890px">Cancel</a>
+                </div>
+            </form>
+        </div>
+
+
+    <!--for demo wrap-->
+<!--
+        <section>
+            <table class="table table-dark table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">Booking Id</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Jurney End Time</th>
+                    <th scope="col">Car Register Number</th>
+                    <th scope="col">Jurney Start Time</th>
+                    <th scope="col">Jurney End Time</th>
+                    <th scope="col">Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>Requested</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                    <td>Requested</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td >@Larry the Bird</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>Requested</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+-->
+
+
+
+<!-- follow me template -->
+<script src="../asserts/js/bootstrap.min.js"></script>
+<script src="../asserts/js/jquery-3.6.0.min.js"></script>
+<script>
+    function enableBtnReg() {
+        document.getElementById("req").style.display="block";
+        $("#btnSendFile2").attr("disabled", true);
+    }
+    function enableBtnReq() {
+        $("#req").attr("disabled", true);
+        $("#req").html("Request Sent");
+    }
+
+
+            $("#btnSendFile2").click(function () {
+
+                var fileObject = $("#file")[0].files[0];//access file object from input field
+                var fileName = $("#file")[0].files[0].name; //get file name
+
+                var data = new FormData(); //setup form data object to send file data
+                data.append("file", fileObject, fileName); //append data
+
+                $.ajax({
+                    url:"http://localhost:8080/Easy_Car_Rental/book",
+                    method: 'post',
+                    async: true,
+                    processData: false, //stop processing data of request body
+                    contentType: false, // stop setting content type by jQuery
+                    data: data,
+                    success: function () {
+                        alert("File Uploaded");
+                    }
+                });
+                enableBtnReg();
+            });
+
+
+
+    $("#req").click(function () {
+        let bookingId = $("#bookingId").val();
+        let date = $("#date").val();
+        let nic = $("#nic").val();
+        let reg = $("#regnum").val();
+        let sdate = $("#sdate").val();
+        let edate = $("#edate").val();
+        
+            var driverissue = document.getElementsByName('inlineRadioOptions').value;
+
+        /*var rate_value;
+        if(rates =='need a driver'){
+            rate_value = document.getElementById('inlineRadio1').value;
+
+        }else if(rates =='no need a driver'){
+            rate_value = document.getElementById('inlineRadio2').value;
+
+        }*/
+      console.log(bookingId);
+      console.log(date);
+      console.log(nic);
+      console.log(reg);
+      console.log(sdate);
+      console.log(edate);
+      console.log(driverissue);
+       // document.getElementById('results').innerHTML = rate_value;
+
+
+       $.ajax({
+           method:"POST",
+           url: "http://localhost:8080/Easy_Car_Rental/book/save",
+           contentType:'application/json',
+           date:JSON.stringify({
+               bookingId:bookingId,
+               date:date,
+               customerID:{
+                   nic:nic
+               },
+               bookingDetails:
+                   {
+                       car_bookingDetail_pk:{
+                           bookingId:bookingId,
+                           regNumber:reg
+                       },
+                       startTime:sdate,
+                       endTime:edate,
+                       driverIssue:driverissue
+                   }
+
+           }),
+           success: function (data) {
+               console.log(data);
+           }
+       });
+    enableBtnReq();
+    });
+
+
+
+    // '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+    $(window).on("load resize ", function() {
+        var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+        $('.tbl-header').css({'padding-right':scrollWidth});
+    }).resize();
+
+</script>
+</body>
+</html>

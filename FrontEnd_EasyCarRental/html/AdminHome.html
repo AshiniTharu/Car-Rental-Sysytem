@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admins Home</title>
+    <link rel="stylesheet" href="../css/carList.css">
+
+
+    <link rel="stylesheet" href="../asserts/css/bootstrap.min.css">
+</head>
+<body onload="OrderFunction();">
+<section id="nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid" id="navcar">
+            <a class="navbar-brand" href="#">
+                <a id="head">EasyCar...</a>
+            </a>
+            <img src="../asserts/img/free-car-icon.png">
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" >Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../asserts/img/supervised_user_circle_black_24dp.svg" alt="">My Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" id="userName">Log In as name</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Change Username</a></li>
+                            <li><a class="dropdown-item" href="#">Change Password</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><img src="../asserts/img/power_settings_new_black_24dp.svg" alt="">Sign out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<br>
+<br>
+<section class="container-fluid" id="carheader">
+    <div class="row mt-1" id="ad">
+
+        <div class="col-md-3">
+            <div id="checkbox2" class="container-fluid p-3 ">
+                <a href=""><img src="../asserts/img/list_alt_black_24dp.svg" alt=""><b>All Booking Request Details</b></a>
+                <h5 id="timetest">115</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="checkbox2" class="container-fluid p-3 ">
+                <a href=""><img src="../asserts/img/schedule_black_24dp.svg" alt=""><b>Booking Status </b></a>
+                <h5 id="timetest">Mon - Sun: 08:00 - 21.00</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="checkbox2" class="container-fluid p-3 ">
+                <a href=""><img src="../asserts/img/person_add_black_24dp.svg" alt=""><b>Registered Customers Per Day</b></a>
+                <h5 id="timetest">20</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="checkbox2" class="container-fluid p-3 ">
+                <a href=""><img src="../asserts/img/today_black_24dp.svg" alt=""><b>Booking Requests</b></a>
+                <h5 id="timetest">10</h5>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <div class="row mt-1" id="ad">
+        <div class="col-md-3">
+            <div id="checkbox2" class="container-fluid p-3 ">
+                <a href="http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/Driver%20Home.html?_ijt=54s8p8ilfvv3j39suuu2t7nlrv"><img src="../asserts/img/departure_board_black_24dp.svg" alt=""><b>Driver's Schedule</b></a>
+                <h5 id="timetest">All Drivers = 40</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="checkbox2" class="container-fluid p-3 ">
+                <a href=""><img src="../asserts/img/directions_car_filled_black_24dp.svg" alt=""><b>Working Drivers</b></a>
+                <h5 id="addresstest">20</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="checkbox2" class="container-fluid p-3 ">
+                <a href=""><img src="../asserts/img/directions_car_filled_black_24dp.svg" alt=""><b>Available Cars</b></a>
+                <h5 id="timetest">30 of 50 cars</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="checkbox2" class="container-fluid p-3 ">
+                <a href="http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/Customer%20Table.html?_ijt=d5ses3itmtb97dm2nd106uhenr"><img src="../asserts/img/account_box_black_24dp.svg" alt=""><b> Registerd Customer Details</b></a>
+                <h5 id="timetest">10</h5>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+<br>
+<br>
+<section>
+    <table class="table table-dark table-hover">
+        <thead>
+        <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Booking Id</th>
+            <th scope="col">Customer NIC</th>
+            <th scope="col">Car Reg Num</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">End Date</th>
+        </tr>
+        </thead>
+        <tbody id="tblBookingReq">
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+<script src="../asserts/js/jquery-3.6.0.min.js"></script>
+<script src="../asserts/js/bootstrap.min.js"></script>
+<script src="../js/carList.js"></script>
+<script>
+    $('#click').click(function() {
+        $('.detail').css({
+            'display': 'inline'
+
+        });
+    });
+</script>
+<script>
+function OrderFunction() {
+        $("#tblBookingReq").empty();
+        $.ajax({
+            url: 'http://localhost:8080/Easy_Car_Rental/admin/req',
+            method: 'get',
+            async: true,
+            dataType: "json", // convert response into JSON if valid
+            success: function (data, textState, xhr) {
+                // let ob = JSON.parse(data); // do the same thing
+                for (let details of data) {
+                    var row = `<tr><td>${details.date}</td><td>${details.bookingId}</td><td>${details.nic}</td><td>${details.regNumber}</td><td>${details.startTime}</td><td>${details.endTime}</td></tr>`;
+                    $("#tblBookingReq").append(row);
+                }
+            }
+        });
+    }
+</script>
+
+
+
+</body>
+</html>

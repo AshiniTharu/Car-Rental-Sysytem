@@ -1,0 +1,142 @@
+
+
+#checkbox2{
+    height: 800px;
+    background: white;
+    padding: 30px;
+    border-radius:10px ;
+    align-content: left;
+}
+
+
+#addresstest{
+    color: #adb5bd;
+    font-weight: normal;
+}
+
+#timetest{
+    color: #adb5bd;
+    font-weight: normal;
+}
+
+
+/*----------------------------nav----------------------*/
+#nav
+{
+    background-color: #1abc9c;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.navbar-nav li{
+    padding:  10px;
+}
+#navcar{
+    background-color:#1abc9c ;
+}
+
+
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+    right: 0;
+}
+
+.container-fluid img{
+    width: 100px;
+    height: 70px;
+}
+
+
+#nav ul li a:hover{
+    color: #f1c40f!important;
+
+}
+
+.navbar{
+    height: 70px;
+}
+
+.navbar-toggler{
+    border: none!important;
+}
+.nav-link{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+#head{
+    font-family: 'Sacramento', cursive;
+    color: black;
+    font-size: 30px;
+}
+.collapse{
+    padding-left: 670px;
+}
+#navbarDropdown img{
+    width: 30px;
+    height: 30px;
+}
+.dropdown-menu img{
+    width: 30px;
+    height: 30px;
+}
+
+.carousel-caption{
+    top: 15%;
+    bottom: initial!important;
+}
+
+.carousel-caption h5 i{
+    color: white;
+}
+.carousel-caption h5{
+    font-family: 'Poppins', sans-serif;
+    width: fit-content;
+    padding: 45px;
+
+}
+.carousel-caption h1{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+#checkbox{
+    background-color: #f1c40f;
+    border: 2px solid white;
+    border-radius:10px ;
+    align-content: left;
+}
+.carousel-caption div h4 {
+    color: black;
+    font-weight: bolder;
+    text-align: left;
+    padding-bottom: 15px;
+}
+#location{
+    width: 250px;
+}
+#startDate,#endDate{
+    width: 220px;
+}
+.details{
+    padding: 5px;
+}
+.btn-success{
+    padding: 30px;
+}
+
+#checkbox{
+    padding: 30px;
+}
+
+#location,#startDate,#endDate{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+.d-flex{
+    padding: 10px;
+}

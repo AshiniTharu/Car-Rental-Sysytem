@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver Sign Up | Easy Car Rental</title>
+    <link rel="stylesheet" href="../css/SIgnInStyles.css">
+    <link rel="stylesheet" href="../asserts/css/bootstrap.min.css">
+</head>
+<body>
+<div class="card" style="width: 360px;">
+    <form>
+        <h2 class="title">Hello Drivers!</h2>
+        <h4 class="title" > Log in</h4>
+        <hr>
+
+        <div class="email-login">
+            <label for="userName"> <b>User Name</b></label>
+            <input id="userName" type="text" placeholder="Enter UserName" name="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+        </div>
+        <button id="btnSave" class="cta-btn" onclick="location.href='http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/Driver%20Home.html?_ijt=5s76mn78f3ao8tnqgpoqcctgrn'">Log In</button>
+        <a class="forget-pass" href="#">Forgot password?</a>
+        <a class="previous-pass" href="http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/DashboardSignIn.html?_ijt=miqrcjbpikduarnl3sh0vfpag4">Previous</a>
+    </form>
+</div>
+<script src="../asserts/js/jquery-3.6.0.min.js"></script>
+<script src="../asserts/css/bootstrap.min.css"></script>
+<script>
+    $("#btnAdminLogin").click(function () {
+        let username=$("#userName").val();
+        let password=$("#psw").val();
+
+        $.ajax({
+            method:"POST",
+            url:"http://localhost:8080/Easy_Car_Rental/admin/adminLogin",
+            async:true,
+            contentType: 'application/json',
+            data: JSON.stringify({
+                aUsername: username,
+                aPassword: password
+            }),
+            success: function () {
+                console.log(data);
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+    <link rel="stylesheet" href="../css/carList.css">
+
+
+    <link rel="stylesheet" href="../asserts/css/bootstrap.min.css">
+</head>
+<body>
+<section id="nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid" id="navcar">
+            <a class="navbar-brand" href="#">
+                <a id="head">EasyCar...</a>
+            </a>
+            <img src="../asserts/img/free-car-icon.png">
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" >Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../asserts/img/account_circle_black_24dp.svg" alt="">My Account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" id="userName">Log In as name</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Change Username</a></li>
+                            <li><a class="dropdown-item" href="#">Change Password</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><img src="../asserts/img/power_settings_new_black_24dp.svg" alt="">Sign out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+<section class="container-fluid" id="carheader">
+    <div id="checkbox" class="container-fluid p-3 ">
+
+    <h1>Car Hire – Search, Compare & Save</h1>
+            <h4>Let’s find your ideal car</h4>
+            <input type="checkbox" name="locationNeeded" class="locationNeeded" >Drop car off at different location
+            <input type="checkbox" name="driverNeeded" class="driverNeeded">Driver aged 30 – 65
+            <div class="details">
+                <input type="text" name="location" id="location" placeholder="Pick-Up Location">
+                <input type="datetime-local" name="startDate" id="startDate">
+                <input type="datetime-local" name="endDate" id="endDate">
+                <button type="button" class="btn btn-success">Search</button>
+            </div>
+
+        </div>
+
+
+    <div class="row mt-1" id="ad">
+        <div class="col-md-3">
+
+            <div id="checkbox2" class="container-fluid p-3 ">
+                <h6 ><img src="../asserts/img/location_on_black_24dp.svg" alt="">Address:</h6>
+                <h6 id="addresstest">No: 200,Galle Road,Panadura</h6>
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <div id="checkbox2" class="container-fluid p-3 ">
+                <h6><img src="../asserts/img/schedule_black_24dp.svg" alt="">Opening hours</h6>
+                <h6 id="timetest">Mon - Sun: 08:00 - 21.00</h6>
+
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div id="checkbox2" class="container-fluid p-3 ">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search in Brand" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<section id="home">
+
+<section></section>
+
+<section id="car">
+    <div id="item-list">
+    <ul>
+        <li>
+    <section class="row mt-3">
+        <section class="col-md-4">
+
+            <a class="">
+                <div id="car">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../asserts/img/green%20mini.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../asserts/img/blueluxury.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../asserts/img/whiteluxury.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../asserts/img/graynormal.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <section class="col-md-3">
+            <div>
+                <h6>Brand: <span>Toyota</span></h6>
+                <h6>Type: <span>mini</span></h6>
+                <h6>Number of Passengers: <span>4</span></h6>
+                <h6>Transmision Type: <span>Manual</span></h6>
+                <h6>Fuel Type: <span>Diesel</span></h6>
+                <h6>Colour <span>Red</span></h6>
+
+
+            </div>
+        </section>
+            <section class="col-md-3">
+                <div>
+                    <h6>Rent Fee For a Day: <span>Rs.6000.00</span></h6>
+                    <h6>Rent Fee For a Month: <span>Rs.60000.00</span></h6>
+                    <h6>Free Millage <span>10Km</span></h6>
+                    <h6>Price for extra Km <span>Rs.100.00</span></h6>
+                    <h6>Registration Num <span>R01235</span></h6>
+                </div>
+                <br>
+                <button type="button" class="btn btn-success" onclick="location.href='http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/PlaceBooking.html?_ijt=aht2bvrg5jnfiltcbmo7tb3qtq'">Book Now</button>
+
+            </section>
+        <section class="col-md-2">
+            <div id="checkbox2" class="container-fluid p-3 ">
+                <h6 id="dmg"><img src="../asserts/img/arrow_back_black_24dp.svg" alt="">Damage Wiever:</h6>
+                <h6 id="addresstest">Rs.1000.00</h6>
+                <hr>
+                <h6 id="goodchhead">Good choice!</h6>
+                <br>
+                <h6 id="goodch"><img src="../asserts/img/emoji_emotions_black_24dp.svg" alt="">customer rating: 80%</h6>
+                <h6 id="goodch"><img src="../asserts/img/check_circle_black_24dp.svg" alt="">Free cancelation!</h6>
+            </div>
+
+            </section>
+    </section>
+        </li>
+        <li>
+            <section class="row mt-3">
+                <section class="col-md-4">
+
+                    <a class="">
+                        <div id="car">
+
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../asserts/img/redmini.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../asserts/img/green%20mini.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../asserts/img/blueluxury.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../asserts/img/whiteluxury.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+                <section class="col-md-3">
+                    <div>
+                        <h6>Brand: <span>Toyota</span></h6>
+                        <h6>Type: <span>mini</span></h6>
+                        <h6>Number of Passengers: <span>4</span></h6>
+                        <h6>Transmision Type: <span>Manual</span></h6>
+                        <h6>Fuel Type: <span>Diesel</span></h6>
+                        <h6>Colour <span>Red</span></h6>
+
+
+                    </div>
+                </section>
+                <section class="col-md-3">
+                    <div>
+                        <h6>Rent Fee For a Day: <span>Rs.6000.00</span></h6>
+                        <h6>Rent Fee For a Month: <span>Rs.60000.00</span></h6>
+                        <h6>Free Millage <span>10Km</span></h6>
+                        <h6>Price for extra Km <span>Rs.100.00</span></h6>
+                        <h6>Registration Num <span>R01235</span></h6>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-success">Book Now</button>
+
+                </section>
+                <section class="col-md-2">
+                    <div id="checkbox2" class="container-fluid p-3 ">
+                        <h6 id="dmg"><img src="../asserts/img/arrow_back_black_24dp.svg" alt="">Damage Wiever:</h6>
+                        <h6 id="addresstest">Rs.1000.00</h6>
+                        <hr>
+                        <h6 id="goodchhead">Good choice!</h6>
+                        <br>
+                        <h6 id="goodch"><img src="../asserts/img/emoji_emotions_black_24dp.svg" alt="">customer rating: 80%</h6>
+                        <h6 id="goodch"><img src="../asserts/img/check_circle_black_24dp.svg" alt="">Free cancelation!</h6>
+                    </div>
+
+                </section>
+            </section>
+        </li>
+        <li>
+            <section class="row mt-3">
+                <section class="col-md-4">
+
+                    <a class="">
+                        <div id="car">
+
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../asserts/img/blueluxury.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../asserts/img/whiteluxury.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../asserts/img/graynormal.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../asserts/img/redmini.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+                <section class="col-md-3">
+                    <div>
+                        <h6>Brand: <span>Toyota</span></h6>
+                        <h6>Type: <span>mini</span></h6>
+                        <h6>Number of Passengers: <span>4</span></h6>
+                        <h6>Transmision Type: <span>Manual</span></h6>
+                        <h6>Fuel Type: <span>Diesel</span></h6>
+                        <h6>Colour <span>Red</span></h6>
+
+
+                    </div>
+                </section>
+                <section class="col-md-3">
+                    <div>
+                        <h6>Rent Fee For a Day: <span>Rs.6000.00</span></h6>
+                        <h6>Rent Fee For a Month: <span>Rs.60000.00</span></h6>
+                        <h6>Free Millage <span>10Km</span></h6>
+                        <h6>Price for extra Km <span>Rs.100.00</span></h6>
+                        <h6>Registration Num <span>R01235</span></h6>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-success">Book Now</button>
+
+                </section>
+                <section class="col-md-2">
+                    <div id="checkbox2" class="container-fluid p-3 ">
+                        <h6 id="dmg"><img src="../asserts/img/arrow_back_black_24dp.svg" alt="">Damage Wiever:</h6>
+                        <h6 id="addresstest">Rs.1000.00</h6>
+                        <hr>
+                        <h6 id="goodchhead">Good choice!</h6>
+                        <br>
+                        <h6 id="goodch"><img src="../asserts/img/emoji_emotions_black_24dp.svg" alt="">customer rating: 80%</h6>
+                        <h6 id="goodch"><img src="../asserts/img/check_circle_black_24dp.svg" alt="">Free cancelation!</h6>
+                    </div>
+
+                </section>
+            </section>
+        </li>
+    </ul>
+    </div>
+</section></section>
+
+
+<script src="../asserts/js/jquery-3.6.0.min.js"></script>
+<script src="../asserts/js/bootstrap.min.js"></script>
+<script>
+    $('#click').click(function() {
+        $('.detail').css({
+            'display': 'inline'
+
+        });
+    });
+
+    $(function() {
+        $(".expand").on( "click", function() {
+            $(this).next().slideToggle(100);
+            $expand = $(this).find(">:first-child");
+
+            if($expand.text() == "+") {
+                $expand.text("-");
+            } else {
+                $expand.text("+");
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

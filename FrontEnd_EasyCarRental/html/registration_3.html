@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Info | Easy Car Rental</title>
+    <link rel="stylesheet" href="../css/RegistrationStyles.css">
+
+</head>
+<body>
+
+<div class="card">
+    <form>
+        <h2 class="title">Login Info</h2>
+        <hr>
+        <div class="email-login">
+            <label for="email"> <b>email</b></label>
+            <input id="email" type="text" placeholder="Enter UserName" name="email" required>
+            <label for="nic"> <b>NIC</b></label>
+            <input id="nic" type="text" placeholder="Enter UserName" name="nic" required>
+            <label for="address"> <b>Address</b></label>
+            <input id="address" type="text" placeholder="Enter UserName" name="address" required>
+            <label for="contact"> <b>Contact</b></label>
+            <input id="contact" type="text" placeholder="Enter UserName" name="contact" required>
+            <label for="uname"> <b>Username</b></label>
+            <input id="uname" type="text" placeholder="Enter UserName" name="uname" required>
+            <label for="pswNew"><b>Password</b></label>
+            <input id="pswNew" type="text" placeholder="Enter New Password" name="pswN" required>
+            <div id="files">
+                <input class="form-control" id="file" name="file" type="file" required>
+                <button class="btn btn-danger mt-3" id="btnSendFile" type="button" onclick="enableBtnReg();">Upload</button>
+            </div >
+
+            <button class="btn" id="btnSave" type="submit" onclick="enableBtn();" style="display:none">Register</button>
+            <button onclick="location.href='http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/registration_3.html?_ijt=trlm4j7l7riqf5vnom7ad7vu36'" class="btn" id="btnNext" type="submit" style="display: none">Next</button>
+
+        </div>
+
+        <button class="btn" id="btnSignUp" type="submit" onclick="enableBtnNext();" >Sign Up</button>
+        <button onclick="location.href='http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/registration_3.html?_ijt=trlm4j7l7riqf5vnom7ad7vu36'" class="btn" id="btnHome" type="submit" style="display: none">Next</button>
+        <a class="previous-pass" href="http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/registration_2.html?_ijt=1gvgeokpdc2vb1c9rvt7rv0i9j">Previous</a>
+    </form>
+</div>
+</body>
+
+<script>
+
+    $("#btnSignUp").click(function () {
+        let uname= $("#uname").val();
+        let pswNew= $("#pswNew").val();
+        let confrmId = $("#confrmNic").val();
+
+        $.ajax({
+            method:"POST",
+            url:"http://localhost:8080/Easy_Car_Rental/customer/saveLoginInfo",
+            contentType: 'application/json',
+            async: true,
+            data: JSON.stringify(
+        {
+            username:ashini,
+            password:sholti,
+            customer:{
+            nic:996990455v
+        }
+
+
+    }),
+            success: function (data) {
+                console.log(data);
+            }
+
+        });
+    });
+
+
+
+</script>
+
+    <script>
+    function enableBtn() {
+        document.getElementById("btnNext").style.display="block";
+    }
+    function enableBtnReg() {
+        document.getElementById("btnSave").style.display="block";
+    }
+
+</script>
+
+</html>

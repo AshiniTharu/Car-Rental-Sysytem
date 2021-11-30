@@ -1,0 +1,64 @@
+/*----------------------------nav----------------------*/
+#nav
+{
+    background-color: #1abc9c;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.navbar-nav li{
+    padding:  10px;
+}
+#navcar{
+    background-color:#1abc9c ;
+}
+
+
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+    right: 0;
+}
+
+.container-fluid img{
+    width: 100px;
+    height: 70px;
+}
+
+
+#nav ul li a:hover{
+    color: #f1c40f!important;
+
+}
+
+.navbar{
+    height: 70px;
+}
+
+.navbar-toggler{
+    border: none!important;
+}
+.nav-link{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+#head{
+    font-family: 'Sacramento', cursive;
+    color: black;
+    font-size: 30px;
+}
+.collapse{
+    padding-left: 670px;
+}
+#navbarDropdown img{
+    width: 30px;
+    height: 30px;
+}
+.dropdown-menu img{
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,32 @@
+*
+body{
+    font-family: sans-serif;
+}
+
+.card-body:hover .overlay{
+    visibility: visible;
+    animation: fade 0.5s;
+}
+.col-sm-4{
+    padding: 20px;
+}
+card{
+    width: 15rem;
+    background: red;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+a2{
+    background: none;
+    padding: 5px;
+    color: #adb5bd;
+    border: 2px solid #adb5bd;
+    border-radius: 10px;
+    }
+a2:hover{
+    background: #adb5bd;
+    color: white;
+}

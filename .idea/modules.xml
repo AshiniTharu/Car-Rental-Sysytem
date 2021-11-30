@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BackEnd_EasyCarRental/BackEnd_EasyCarRental.iml" filepath="$PROJECT_DIR$/BackEnd_EasyCarRental/BackEnd_EasyCarRental.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Car Rental System2.iml" filepath="$PROJECT_DIR$/Car Rental System2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FrontEnd_EasyCarRental/FrontEnd_EasyCarRental.iml" filepath="$PROJECT_DIR$/FrontEnd_EasyCarRental/FrontEnd_EasyCarRental.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Info | Easy Car Rentals</title>
+    <link rel="stylesheet" href="../css/RegistrationStyles.css">
+    <link rel="stylesheet" href="../html/registration_3.html">
+    <link rel="stylesheet" href="../asserts/css/bootstrap.min.css">
+</head>
+<body>
+ <div class="card" style="width: 400px;">
+     <form>
+         <h2 class="title">Login Info</h2>
+         <hr>
+         <div class="email-login">
+             <label for="email"> <b>Email</b></label>
+             <input id="email" type="text" placeholder="Enter Email" name="email" required>
+             <label for="nic"> <b>NIC</b></label>
+             <input id="nic" type="text" placeholder="Enter NIC" name="nic" required>
+             <label for="address"> <b>Address</b></label>
+             <input id="address" type="text" placeholder="Enter Address" name="address" required>
+             <label for="contact"> <b>Contact</b></label>
+             <input id="contact" type="text" placeholder="Enter Contact" name="contact" required>
+             <label for="uname"> <b>Username</b></label>
+             <input id="uname" type="text" placeholder="Enter UserName" name="uname" required>
+             <label for="pswNew"><b>Password</b></label>
+             <input id="pswNew" type="text" placeholder="Enter New Password" name="pswN" required>
+             <label for="pswNew">Pleace Upload your image here</label>
+             <div id="files">
+                 <h6>Pleace Note: This is one time upload ! </h6>
+                 <input class="form-control" id="file" name="file" type="file" required>
+                 <button class="btn btn-danger mt-3" id="btnSendFile" type="button"  >Upload</button>
+             </div >
+
+             <button class="btn" id="btnSave" type="submit"   style="display:none">Register</button>
+             <a href="http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/carList.html?_ijt=h0j0i2kgdorf0f57abkldpdtsv" class="btn" id="btnNext" type="submit" style="display: none">Next</a>
+
+         </div>
+
+<!--
+         <button onclick="location.href='http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/carList.html?_ijt=h0j0i2kgdorf0f57abkldpdtsv'" class="btn" id="btnNext" type="submit" style="display: none">Next</button>
+-->
+         <a class="previous-pass" href="http://localhost:63342/Car%20Rental%20System2/FrontEnd_EasyCarRental/html/registration_2.html?_ijt=1gvgeokpdc2vb1c9rvt7rv0i9j">Previous</a>
+     </form>
+ </div>
+
+
+<script src="../asserts/js/jquery-3.6.0.min.js"></script>
+<script src="../asserts/js/bootstrap.min.js"></script>
+<script>
+
+
+    $("#btnSave").click(function () {
+
+        let customerID = $("#email").val();
+        let customerName = $("#nic").val();
+        let customerAddress = $("#address").val();
+        let customerSalary = $("#contact").val();
+        let uname= $("#uname").val();
+        let pswNew= $("#pswNew").val();
+
+        $.ajax({
+            method: "POST",
+            url: "http://localhost:8080/Easy_Car_Rental/customer/savePersonalInfo",
+            contentType: 'application/json',
+            async: true,
+            data: JSON.stringify({
+                email: customerID,
+                nic: customerName,
+                address: customerAddress,
+                contact: customerSalary,
+                username:uname,
+                password:pswNew
+            }),
+            success: function (data, textState, xhr) {
+                alert("You are login");
+            }
+        });
+        enableBtn();
+        loadAllCustomers();
+
+    });
+
+    function enableBtn() {
+        document.getElementById("btnNext").style.display="block";
+        $("#btnSave").attr("disabled", true);
+    }
+    function enableBtnReg() {
+        document.getElementById("btnSave").style.display="block";
+        $("#btnSendFile").attr("disabled", true);
+    }
+
+
+    $("#btnSendFile").click(function () {
+
+        var fileObject = $("#file")[0].files[0];//access file object from input field
+        var fileName = $("#file")[0].files[0].name; //get file name
+
+        var data = new FormData(); //setup form data object to send file data
+        data.append("file", fileObject, fileName); //append data
+
+        $.ajax({
+            url:"http://localhost:8080/Easy_Car_Rental/customer",
+            method: 'post',
+            async: true,
+            processData: false, //stop processing data of request body
+            contentType: false, // stop setting content type by jQuery
+            data: data,
+            success: function () {
+                alert("File Uploaded");
+            }
+        });
+        enableBtnReg();
+    });
+</script>
+</body>
+
+</html>
